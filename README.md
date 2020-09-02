@@ -210,7 +210,43 @@ Implement the below architecture, where all components are hosted on AWS:
 
 <br>
 
+- Go to **Agents** --> **Install remote agent** in **BambooServer**.
+
+![](img/install-remote-agent.png)
+
+- SSH to "BambooRemoteAgent.
+
+- Install Java OpenJDK-8:
+
+    ```
+        sudo apt-get update;
+        sudo apt-get install -y openjdk-8-jdk;
+    ```
+
+- Make sure of the path where java is installed:
+
+    ```
+        update-alternatives --config java
+    ```
+
+- Add JAVA_HOME environment variable in **/etc/environment** :
+
+    ```
+        JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    ```
+
+    ```
+        source /etc/environment
+    ```
+
+- Follow the mentioned steps in "Installing a remote agent".
+
+- Approve the agent in BambooServer.
+
 Follow [this](https://confluence.atlassian.com/bamboo/bamboo-remote-agent-installation-guide-289276832.html) tutorial to install remote agents.
+
+
+![](img/remote-agents.png)
 
 
 <hr>
