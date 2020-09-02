@@ -32,6 +32,8 @@ Implement the below architecture, where all components are hosted on AWS:
 
 - **BambooSecGrp:**
 
+    Create a security under the used VPC, to used in all upcoming resources.
+    
     - Inbound Rules:
 
         |Type|Protocol|Port Range|Source|Description|
