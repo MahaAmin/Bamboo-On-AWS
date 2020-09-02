@@ -53,7 +53,7 @@ Implement the below architecture, where all components are hosted on AWS:
     <br>
 
 <hr>
-<br>
+
 
 ## System Requirements
 
@@ -101,7 +101,7 @@ Implement the below architecture, where all components are hosted on AWS:
     |Security Group| BambooSecGrp|
 
 <hr>
-<br>
+
 
 ## PostgreSQL RDS
 
@@ -122,7 +122,6 @@ Implement the below architecture, where all components are hosted on AWS:
 
 <hr>
 
-<br>
 
 ## Bamboo Server Setup
 
@@ -183,11 +182,29 @@ Implement the below architecture, where all components are hosted on AWS:
     ```
 
 
+![setup-wizard](img/setup-wizard.png)
+
+- Generate trial-license from [here](https://my.atlassian.com/license/evaluation)
+
+- Choose **"Custom Installation"** to connect your rds.
+
+
+- Choose **"External Database"**
+
+![external-db](img/external-db.png)
+
+
+- Replace **localhost** by your rds endpoint:
+
+![endpoint](img/endpoint.png)
+
+![connect-db](img/connect-db.png)
+
 - Follow [this](https://confluence.atlassian.com/bamboo/running-the-setup-wizard-289276851.html) tutorial to complete setup wizard.
 
 
 <hr>
-<br>
+
 
 ## Bamboo Remote Agent
 
@@ -197,7 +214,7 @@ Follow [this](https://confluence.atlassian.com/bamboo/bamboo-remote-agent-instal
 
 
 <hr>
-<br>
+
 
 ## Useful Resources
 
