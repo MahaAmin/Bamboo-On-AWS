@@ -3,8 +3,8 @@
 ## Table of Content:
 1. [What is Bamboo?](#what-is-bamboo?)
 2. [Goal](#goal)
-3. [System Requirements](#system-requirements)
 4. [Security Group]
+3. [System Requirements](#system-requirements)
 5. [PostgreSQL RDS]
 6. [Bamboo Server]
 7. [Bamboo Remote Agent]
@@ -26,6 +26,32 @@ Implement the below architecture, where all components are hosted on AWS:
 ![bamboo-architecture-on-aws](img/Bamboo.jpeg)
 
 <hr>
+
+## Security Group
+
+- **BambooSecGrp:**
+
+    - Inbound Rules:
+
+        |Type|Protocol|Port Range|Source|Description|
+        |:--:|:------:|:--------:|:----:|:---------:|
+        |HTTP|TCP|80|0.0.0.0/0, ::/0|To access bamboo from browser|
+        |PostgreSQL|TCP|5432|0.0.0.0/0, ::/0|To access RDS instance|
+        |SSH|TCP|22|0.0.0.0/0, ::/0|To access EC2s|
+        |Custom TCP|TCP|54663|0.0.0.0/0, ::/0|Used by bamboo in server-agent communication|
+        |Custom TCP|TCP|8085|0.0.0.0/0, ::/0|Bamboo-Server listener|
+       
+    <br>
+
+    - Outbound Rules:
+        |Type|Protocol|Port Range|Destination|Description|
+        |:--:|:------:|:--------:|:----:|:---------:|
+        |All Trafic|All|All|0.0.0.0/0||
+
+    <br>
+
+<hr>
+<br>
 
 ## System Requirements
 
