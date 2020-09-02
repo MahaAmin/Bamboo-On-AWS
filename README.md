@@ -182,7 +182,7 @@ Implement the below architecture, where all components are hosted on AWS:
     ```
 
 
-![setup-wizard](img/setup-wizard.png)
+![setup-wizard](img/setup-wizard.PNG)
 
 - Generate trial-license from [here](https://my.atlassian.com/license/evaluation)
 
@@ -191,14 +191,14 @@ Implement the below architecture, where all components are hosted on AWS:
 
 - Choose **"External Database"**
 
-![external-db](img/external-db.png)
+![external-db](img/external-db.PNG)
 
 
 - Replace **localhost** by your rds endpoint:
 
-![endpoint](img/endpoint.png)
+![endpoint](img/endpoint.PNG)
 
-![connect-db](img/connect-db.png)
+![connect-db](img/connect-db.PNG)
 
 - Follow [this](https://confluence.atlassian.com/bamboo/running-the-setup-wizard-289276851.html) tutorial to complete setup wizard.
 
@@ -212,7 +212,7 @@ Implement the below architecture, where all components are hosted on AWS:
 
 - Go to **Agents** --> **Install remote agent** in **BambooServer**.
 
-![](img/install-remote-agent.png)
+![](img/install-remote-agent.PNG)
 
 - SSH to "BambooRemoteAgent.
 
@@ -246,7 +246,7 @@ Implement the below architecture, where all components are hosted on AWS:
 Follow [this](https://confluence.atlassian.com/bamboo/bamboo-remote-agent-installation-guide-289276832.html) tutorial to install remote agents.
 
 
-![](img/remote-agents.png)
+![](img/remote-agents.PNG)
 
 
 <hr>
