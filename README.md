@@ -32,7 +32,7 @@ Implement the below architecture, where all components are hosted on AWS:
 
 - **BambooSecGrp:**
 
-    Create a security under the used VPC, to used in all upcoming resources.
+    Create a security-group under the used VPC, to used in all upcoming resources (Security can be much enhanced by adding only required IPs in Source, but it is okay for learning environment).
     
     - Inbound Rules:
 
